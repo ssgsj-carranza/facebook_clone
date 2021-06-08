@@ -4,18 +4,24 @@ import './App.css';
 import Sidebar from './Components/Sidebar/Sidebar'
 import Feed from './Components/Feed/Feed'
 import Widgets from './Components/Widgets/Widgets';
+import Login from './Components/Login/Login'
 
 
 function App() {
+    const user= null;
     return (
         //BEM naming convention
         <div className='app'>
-            <Header />
+            {!user ? (<Login/>) : (
+                <>
+                <Header />
             <div className='app__body'>
                 <Sidebar/>
                 <Feed />
                 <Widgets/>
             </div>
+                </>
+            )}
         </div>
     )
 }
