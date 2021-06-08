@@ -1,11 +1,11 @@
 import React from 'react'
 import Header from './Components/Header/Header'
+import './App.css';
 
 function App() {
     return (
         //BEM naming convention
         <div className='app'>
-            <h1>Facebook clone</h1>
             <Header />
             {/* App body */}
                 {/* sidebar */}
